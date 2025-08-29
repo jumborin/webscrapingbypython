@@ -25,4 +25,6 @@ jobs:
         pip install requests beautifulsoup4
     
     - name: Run tests
-      run: python fetch_latest_tag.py
+      run: |
+        python fetch_latest_tag_from_dockerhub.py
+        python fetch_latest_tag_from_github.py
