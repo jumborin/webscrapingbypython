@@ -7,6 +7,7 @@ PythonでWebスクレイピングする
 * pip install requests beautifulsoup4
 
 1.実行方法
-* python test.py
+* python fetch_latest_tag_from_dockerhub.py
+* python fetch_latest_tag_from_github.py
 
 以上
