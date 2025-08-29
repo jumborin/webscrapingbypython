@@ -6,8 +6,11 @@ on:
     branches: [ main ]
 
 jobs:
-  windows-run:
-    runs-on: windows-latest
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
     
     steps:
     - uses: actions/checkout@v4
